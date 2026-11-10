@@ -1,6 +1,33 @@
 /* code css à faire */
 .menu {
+    /* Taille du menu */
   width: 100%;
   height: 100%;
   border: 0;
+  transition: 400ms allow-discrete; /*transitions en 400ms y compris sur les propriétés à valeurs "discretes"*/
+  opacity: 0; /* on commence par une opacité à 0 */
+}
+
+html:has(.menu:popover-open) {
+    /* Page figée tant que le menu est ouvert. */
+  overflow: hidden;
+}
+
+.burger {
+    /* cursor permet de changer l'apparence du curseur */
+  cursor: pointer;
+}
+
+
+
+.menu:popover-open {
+    /* l'opacité sera de 1 quand le menu est ouvert */
+  opacity: 1;
+}
+
+@starting-style {
+    /* La déclaration @starting-style permet d'avoir une animation alors que le menu était en display:none */
+  .menu:popover-open {
+    opacity: 0;
+  }
 }
