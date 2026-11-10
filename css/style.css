@@ -32,15 +32,15 @@ html:has(.menu:popover-open) {
   }
 }
 
-@starting-style { /*  */
+@starting-style { /* La déclaration @starting-style permet d'avoir une animation lors de la fermeture du menu */
   .menu:popover-open .burger--close {
     transform: none;
   }
 }
 
 .menu:popover-open .burger--close {
-  transform: rotate(90deg);
-  transition: 400ms;
+  transform: rotate(90deg);/* Tourne le burger */
+  transition: 400ms; /* Temps de transition */
 }
 
 @media (prefers-reduced-motion: reduce)/* Pour les utilisateurs qui préfèrent réduire les animations. ctrl+maj+P */ {

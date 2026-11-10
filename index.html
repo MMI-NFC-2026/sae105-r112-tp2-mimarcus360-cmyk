@@ -12,17 +12,17 @@
   <header class="header header--home">
 
     <!-- Menu principal -->
-    <button class="burger" type="button" popovertarget="menu" aria-label="Menu">
+    <button class="burger" type="button" popovertarget="menu" aria-label="Menu"><!-- le menu s'affiche quand on clique sur le bouton hamburger et se ferme quand on clique à nouveau ou en dehors du menu -->
       🍔
     </button>
 
-    <nav class="menu" id="menu" popover aria-label="Main menu">
+    <nav class="menu" id="menu" popover aria-label="Main menu"><!-- Le menu principal est cacher -->
       <button class="menu__close burger burger--close"
       type="button" 
       popovertarget="menu" 
       popovertargetaction="hide"
       aria-label="Close the menu"
-      autofocus>
+      autofocus><!-- Quand on click le bouton hamburger dans le menu, le menu se ferme. L'autofocus permet d'ouvrir le menu avec tab puis entrer --> 
         🍔
       </button>
       <ul class="menu__list">
